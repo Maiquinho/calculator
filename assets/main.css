@@ -1,0 +1,163 @@
+body {
+    background-color: #343434;
+    height: 100vh;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+.container {
+    max-width: 40vw;
+    margin: 0 auto;
+
+    /* height: 100vh; */
+    background: red;
+}
+
+.calculator {
+    background: var(--darkColor);
+}
+
+.calculator__result {
+    grid-area: result;
+    height: 150px;
+    padding: 20px;
+    color: white;
+
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+
+    font-size: 75px;
+    font-weight: 100;
+}
+
+.calculator__buttons {
+    display: grid;
+    /* height: 90vh; */
+    gap: 1px 1px;
+    grid-template-areas: 
+        "clear moreless perc div"
+        "num7 num8 num9 mult"
+        "num4 num5 num6 sub"
+        "num1 num2 num3 add" 
+        "num0 num0 comma equal"
+    ;
+}
+
+.calculator__buttons .calculator__button {
+    background: var(--lightColor);
+    color: var(--darkColor);
+    padding: 30px;
+
+    font-size: 36px;
+    font-weight: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.calculator__buttons .calculator__button--orange {
+    background: var(--orangeColor);
+    color: white;
+}
+
+.calculator__buttons .calculator__button--light-medium {
+    background: var(--lightMediumColor);
+}
+
+
+
+.calculator__buttons .calculator__button--clear {
+    grid-area: clear;
+} 
+.calculator__buttons .calculator__button--moreless {
+    grid-area: moreless;
+} 
+.calculator__buttons .calculator__button--perc {
+    grid-area: perc;
+} 
+.calculator__buttons .calculator__button--div {
+    grid-area: div;
+} 
+
+
+
+.calculator__buttons .calculator__button--mult {
+    grid-area: mult;
+} 
+.calculator__buttons .calculator__button--nine {
+    grid-area: num9;
+} 
+.calculator__buttons .calculator__button--eight {
+    grid-area: num8;
+} 
+.calculator__buttons .calculator__button--seven {
+    grid-area: num7;
+} 
+
+
+
+.calculator__buttons .calculator__button--sub {
+    grid-area: sub;
+} 
+.calculator__buttons .calculator__button--six {
+    grid-area: num6;
+} 
+.calculator__buttons .calculator__button--five {
+    grid-area: num5;
+} 
+.calculator__buttons .calculator__button--four {
+    grid-area: num4;
+} 
+
+
+
+.calculator__buttons .calculator__button--add {
+    grid-area: add;
+} 
+.calculator__buttons .calculator__button--three {
+    grid-area: num3;
+} 
+.calculator__buttons .calculator__button--two {
+    grid-area: num2;
+} 
+.calculator__buttons .calculator__button--one {
+    grid-area: num1;
+} 
+
+
+
+.calculator__buttons .calculator__button--zero {
+    grid-area: num0;
+    justify-content: flex-start;
+} 
+.calculator__buttons .calculator__button--comma {
+    grid-area: comma;
+} 
+.calculator__buttons .calculator__button--equal {
+    grid-area: equal;
+} 
+
+
+
+
+
+footer {
+    width: 100%;
+    padding: 10px 0 30px;
+    color: var(--lightColor);
+    text-align: center;
+}
+
+footer a {
+    color: inherit;
+}
