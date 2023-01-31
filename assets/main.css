@@ -15,7 +15,6 @@ body {
     max-width: 40vw;
     margin: 0 auto;
 
-    /* height: 100vh; */
     background: red;
 }
 
@@ -35,11 +34,12 @@ body {
 
     font-size: 75px;
     font-weight: 100;
+
+    overflow: hidden;
 }
 
 .calculator__buttons {
     display: grid;
-    /* height: 90vh; */
     gap: 1px 1px;
     grid-template-areas: 
         "clear moreless perc div"
